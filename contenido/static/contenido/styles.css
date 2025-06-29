@@ -1,0 +1,82 @@
+/* Reset del layout */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* ===== Top Navigation Bar ===== */
+#topbar {
+    background-color: #1e1e2f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    flex-wrap: wrap;
+}
+
+.nav-logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00bfff;
+}
+
+.nav-links a {
+    color: #ddd;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00bfff;
+    border-bottom: 2px solid #00bfff;
+}
+
+/* ===== Content ===== */
+#content {
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #333;
+}
+
+h2 a {
+    color: #0077cc;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+h2 a:hover {
+    color: #004466;
+    border-bottom: 2px solid #0077cc;
+}
+
+/* Responsive: stacked nav */
+@media (max-width: 768px) {
+    .nav-links {
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        margin: 10px;
+    }
+}
+
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #00bfff;
+}
+
+

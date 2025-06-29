@@ -1,0 +1,24 @@
+{% extends "contenido/encabezado.html" %}
+
+{% block titulo %} Cursos {% endblock %}
+{% block texto %} Cursos {% endblock %}
+{% block span %} Lista {% endblock %}
+
+{% block contenido %}
+<h2>Lista de Cursos</h2>
+
+<!-- Menú desplegable Bootstrap -->
+<div class="dropdown mb-3">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownCursos" data-bs-toggle="dropdown" aria-expanded="false">
+    Selecciona un curso
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownCursos">
+    <li><a class="dropdown-item" href="#">Python</a></li>
+    <li><a class="dropdown-item" href="#">Django</a></li>
+    <li><a class="dropdown-item" href="#">JavaScript</a></li>
+    <li><a class="dropdown-item" href="#">HTML</a></li>
+    <li><a class="dropdown-item" href="#">CSS</a></li>
+  </ul>
+</div>
+{% endblock %}
+
