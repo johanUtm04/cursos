@@ -1,0 +1,15 @@
+{% extends "contenido/encabezado.html" %}
+
+{% block titulo %} Página {% endblock %}
+{% block texto %} Página principal {% endblock %}
+{% block span %} DSM {% endblock %}
+
+{% block contenido %}
+<div class="home-container">
+    <h1>¡Bienvenido a la página principal 🦕!</h1>
+    <p class="subtitle">Gestiona tus cursos de forma sencilla y eficiente.</p>
+    <a href="{% url 'create_curso' %}">
+        <button type="button" class="btn-primary btn-create">Crear nuevo curso</button>
+    </a>
+</div>
+{% endblock %}

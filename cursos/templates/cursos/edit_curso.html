@@ -1,0 +1,17 @@
+{% extends "contenido/encabezado.html" %}
+
+{% block titulo %} Editar Curso {% endblock %}
+{% block texto %} Modificar información del curso {% endblock %}
+{% block span %} {% endblock %}
+
+{% block contenido %}
+<h2>Editar Curso: {{ curso.nombre }}</h2>
+
+<form method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Guardar Cambios</button>
+</form>
+
+<a href="{% url 'cursos' %}">← Volver a la lista de cursos</a>
+{% endblock %}

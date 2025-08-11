@@ -1,0 +1,142 @@
+/* ==== FUENTE Y FONDO GENERAL ==== */
+body {
+    background-color: #1a1c1f; /* gris oscuro casi negro */
+    color: #e0e0e0;
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* ==== HEADER ==== */
+#header {
+    background-color: #0f3d3e;
+    border-bottom: 3px solid #1dd3b0;
+}
+
+#header h1, #header a {
+    color: #1dd3b0 !important;
+}
+
+/* ==== TITULOS DE MÓDULOS ==== */
+.module h2 {
+    background-color: #2b2f33;
+    color: #1dd3b0;
+    padding: 10px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+/* ==== LINKS ==== */
+a {
+    color: #1dd3b0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #20f0d0;
+    text-shadow: 0 0 5px #1dd3b0;
+}
+
+/* ==== BOTONES ==== */
+.button, input[type="submit"], input[type="button"], .submit-row input {
+    background: linear-gradient(to right, #1dd3b0, #11998e);
+    border: none;
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0 10px #1dd3b0;
+}
+
+.button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+    background: linear-gradient(to right, #20f0d0, #0e736c);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #20f0d0;
+}
+
+/* ==== TABLAS ==== */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #24272b;
+    color: #e0e0e0;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #333;
+}
+
+th {
+    background-color: #1e2226;
+    color: #1dd3b0;
+}
+
+/* ==== FORMULARIOS ==== */
+fieldset {
+    border: 1px solid #1dd3b0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1e2125;
+}
+
+input, select, textarea {
+    background-color: #2b2f33;
+    color: #ffffff;
+    border: 1px solid #1dd3b0;
+    border-radius: 6px;
+    padding: 8px;
+    margin: 5px 0;
+    width: 100%;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #20f0d0;
+    box-shadow: 0 0 5px #20f0d0;
+}
+
+/* ==== MENSAJES ==== */
+ul.messagelist {
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #27343b;
+    border-left: 5px solid #1dd3b0;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+/* ==== PIE DE PÁGINA ==== */
+#footer {
+    background-color: #0f3d3e;
+    color: #a0a0a0;
+    padding: 10px;
+    text-align: center;
+    border-top: 3px solid #1dd3b0;
+}
+
+
+.breadcrumbs {
+    background: linear-gradient(90deg, #0d0d0d 0%, #1f1f1f 100%);
+    color: #d6faff;
+    padding: 12px 24px;
+    font-size: 15px;
+    border-left: 5px solid #00ffff;
+    box-shadow: 0 2px 8px rgba(0, 255, 255, 0.15);
+}
+
+.breadcrumbs a {
+    color: #00e5ff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.breadcrumbs a:hover {
+    color: #a6ffff;
+    text-decoration: underline;
+}
+

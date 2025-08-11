@@ -1,0 +1,14 @@
+{% extends "contenido/encabezado.html" %}
+
+{% block titulo %} Agregar Curso {% endblock %}
+{% block texto %} Agregar un nuevo curso {% endblock %}
+{% block span %}  {% endblock %}
+
+{% block contenido %}
+<p>Formualrio para agregar un nuevo curso</p>
+<form method="POST" enctype="multipart/form-data"  action="{% url 'create_curso' %}">
+{% csrf_token %}
+{{form.as_p}}
+<button type="submit">Guardar Curso en la BD</button>
+</form>
+{% endblock %}

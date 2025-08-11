@@ -1,0 +1,45 @@
+{% extends "contenido/encabezado.html" %}
+
+{% block titulo %} Página de Consulta {% endblock %}
+{% block texto %} Cursos Disponibles {% endblock %}
+{% block span %} {% endblock %}
+
+{% block contenido %}
+<h2>Lista de Cursos</h2>
+
+<table class="course-table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Duración</th>
+            <th>Imagen</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for curso in cursos %}
+        <tr>
+            <td>{{ curso.nombre }}</td>
+            <td>{{ curso.descripcion }}</td>
+            <td>{{ curso.duracion }}</td>
+            <td>
+                {% if curso.imagen %}
+                    <img src="{{ curso.imagen.url }}" alt="{{ curso.nombre }}" class="curso-img">
+                {% else %}
+                    Sin imagen
+                {% endif %}
+            </td>
+            <td class="acciones-td">
+                <a href="{% url 'edit-curso' curso.id %}" class="btn-accion editar">Editar</a>
+                <a href="{% url 'delete-curso' curso.id %}" class="btn-accion eliminar">Eliminar</a>
+            </td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="5" class="sin-cursos">No hay cursos registrados.</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

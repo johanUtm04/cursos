@@ -1,4 +1,4 @@
-{% extends "contenido/encabezado.html" %}
+{% comment %} {% extends "contenido/encabezado.html" %}
 
 {% block titulo %} Pagina {% endblock %}
 {% block texto %} Pagina principal {% endblock %}
@@ -6,4 +6,10 @@
 
 {% block contenido %}
 <p>Bienvenido a la página principal.</p>
-{% endblock %}
+<form method='post' enctype='multipart/form-data'>
+    {% csrf_token %}
+    {{form.as_p}}
+    <button  type="submit"> Gua
+
+
+{% endblock %} {% endcomment %}
